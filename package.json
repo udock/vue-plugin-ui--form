@@ -1,0 +1,25 @@
+{
+  "name": "@udock/vue-plugin-ui--form",
+  "private": true,
+  "description": "@udock/vue-plugin-ui--form",
+  "version": "0.0.1",
+  "main": "dist/index.umd.js",
+  "files": [
+    "dist",
+    "src/scss",
+    "vscode-snippets"
+  ],
+  "scripts": {
+    "build": "@udock/build-tools webpack sass"
+  },
+  "dependencies": {
+    "async-validator": "^1.8.0"
+  },
+  "peerDependencies": {
+    "lodash": "^4.17.4",
+    "vue": "^2.5.2"
+  },
+  "devDependencies": {
+    "@udock/build-tools": "^0.0.1"
+  }
+}

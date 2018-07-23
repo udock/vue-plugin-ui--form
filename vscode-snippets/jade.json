@@ -1,0 +1,19 @@
+{
+  "u-form": {
+    "description": "UForm",
+    "prefix": "u-form",
+    "body": [
+      "UForm$9(:model=\"${1:form}\")",
+      "\tUFormItem$10(prop=\"${2:prop}\")",
+      "\t\t$0"
+    ]
+  },
+  "u-form-item": {
+    "description": "UForm",
+    "prefix": "u-form-item",
+    "body": [
+      "UFormItem$9(prop=\"${1:prop}\")",
+      "\t$0"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "u-form": {
+		"description": "UForm",
+		"prefix": "u-form",
+		"body": [
+			"<UForm :model=\"${1:form}\" label-width=\"${2:100}px\">",
+			"\t<UFormItem label=\"${3:LabelText}\" prop=\"${4:prop}\">",
+			"\t\t$5",
+			"\t</UFormItem>",
+			"</UForm>"
+		]
+  },
+  "u-form-item": {
+		"description": "UForm",
+		"prefix": "u-form-item",
+		"body": [
+			"<UFormItem label=\"${1:LabelText}\" prop=\"${2:prop}\">",
+			"\t$3",
+			"</UFormItem>"
+		]
+	}
+}
