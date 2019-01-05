@@ -76,13 +76,13 @@ export default {
           if (typeof callback === 'function' && ++count === this.fields.length) {
             callback(allItemError.length === 0 ? null : allItemError)
           }
-        }, extend({trigger: 'form', silent: false}, options))
+        }, extend({ trigger: 'form', silent: false }, options))
       })
     },
     validateField (prop, cb, options) {
       const field = this.fields.filter(field => field.prop === prop)[0]
       if (!field) { throw new Error('must call validateField with valid prop string!') }
-      field.validate('', cb, extend({trigger: 'field'}, options))
+      field.validate('', cb, extend({ trigger: 'field' }, options))
     }
   }
 }

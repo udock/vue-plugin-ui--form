@@ -7,9 +7,9 @@
   </form>
 </template>
 <script>
-  import formValidate from '../mixins/formValidate'
-  export default {
-    name: 'UForm',
-    mixins: [formValidate]
-  }
+import formValidate from '../mixins/formValidate'
+export default {
+  name: 'UForm',
+  mixins: [formValidate]
+}
 </script>

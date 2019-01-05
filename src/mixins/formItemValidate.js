@@ -167,7 +167,7 @@ export default {
       validator.validate(model, { first: true, trigger }, (errors, fields) => {
         this.validateState = !errors ? 'success' : 'error'
         this.validateError = errors && errors[0]
-        const itemErrorObj = this.validateMessage !== '' ? {message: this.validateMessage, trigger, vm: this} : null
+        const itemErrorObj = this.validateMessage !== '' ? { message: this.validateMessage, trigger, vm: this } : null
         cb(itemErrorObj)
       })
     },

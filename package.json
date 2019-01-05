@@ -10,7 +10,7 @@
     "vscode-snippets"
   ],
   "scripts": {
-    "build": "@udock/build-tools webpack sass"
+    "build": "udock-build-tools webpack sass"
   },
   "dependencies": {
     "async-validator": "^1.8.0"
@@ -20,6 +20,6 @@
     "vue": "^2.5.2"
   },
   "devDependencies": {
-    "@udock/build-tools": "^0.0.1"
+    "@udock/build-tools": "^0.0.2"
   }
 }
