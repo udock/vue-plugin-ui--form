@@ -1,6 +1,5 @@
 {
   "name": "@udock/vue-plugin-ui--form",
-  "private": true,
   "description": "@udock/vue-plugin-ui--form",
   "version": "0.0.1",
   "main": "dist/index.umd.js",
@@ -21,5 +20,6 @@
   },
   "devDependencies": {
     "@udock/build-tools": "^0.0.2"
-  }
+  },
+  "license": "MIT"
 }
