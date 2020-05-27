@@ -1,7 +1,7 @@
 {
   "name": "@udock/vue-plugin-ui--form",
   "description": "@udock/vue-plugin-ui--form",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "dist/index.umd.js",
   "files": [
     "dist",

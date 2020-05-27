@@ -28,6 +28,6 @@ import formItemValidate from '../mixins/formItemValidate'
 import { mixins } from '@udock/vue-plugin-ui'
 export default {
   name: 'UFormItem',
-  mixins: [mixins.Emitter, formItemValidate]
+  mixins: [ mixins.Emitter, formItemValidate ]
 }
 </script>

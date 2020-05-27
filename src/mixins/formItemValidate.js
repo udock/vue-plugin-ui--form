@@ -1,7 +1,9 @@
 import isFunction from 'lodash/isFunction'
 import isObject from 'lodash/isObject'
 import isArray from 'lodash/isArray'
+import isString from 'lodash/isString'
 import template from 'lodash/template'
+import reduce from 'lodash/reduce'
 import get from 'lodash/get'
 import noop from 'lodash/noop'
 import '../lib/async-validator.patch'
@@ -39,7 +41,7 @@ export default {
     labelWidth: String,
     prop: String,
     required: Boolean,
-    rules: [Object, Array],
+    rules: [Object, Array, String],
     error: String,
     validateStatus: String,
     showMessage: {
@@ -222,7 +224,10 @@ export default {
       Object.defineProperty(this, 'initialValue', {
         value: initialValue
       })
-      const rules = this.mergedRules = this.formatArray(this.rules || get(this.form.computedRules, this.prop))
+
+      const rules = this.mergedRules = isString(this.rules)
+        ? reduce(this.rules.split(/\s*,\s*/), (ret, item) => ret.concat(get(this.form.computedRules, item)), [])
+        : this.formatArray(this.rules || get(this.form.computedRules, this.prop))
       if (rules.length === 0 && process.env.NODE_ENV !== 'production') typeof console !== 'undefined' && console.warn(`[@udock/vue-plugin-ui--from] "${this.prop}" rule not found`)
       rules.forEach((rule) => {
         if (rule.validator) {
